@@ -39,6 +39,7 @@ body{
       font-family: "Al-Qabas-bold";
      right: 0;
    position: fixed;
+   
   width: 300px;
   height: 100%;
   background: var(--blue);
@@ -133,8 +134,10 @@ body{
   height: 50px;
   background-color: transparent;
   border-radius: 50%;
+
   box-shadow: -35px -35px 0 10px var(--white);
   pointer-events: none;
+  opacity: 1;
 }
 
 .main {
@@ -166,6 +169,7 @@ body{
   width: 60px;
   height: 60px;
   display: flex;
+  color: var(--white);
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
@@ -354,7 +358,7 @@ body{
 
 .status.delivered {
     
-  padding: 2px 4px;
+  padding: 4px;
   background: #8de02c;
   color: var(--white);
   border-radius: 4px;
@@ -362,7 +366,7 @@ body{
   font-weight: 500;
 }
 .status.pending {
-  padding: 2px 4px;
+  padding:  4px;
   background: #e9b10a;
   color: var(--white);
   border-radius: 4px;
@@ -370,7 +374,7 @@ body{
   font-weight: 500;
 }
 .status.return {
-  padding: 2px 4px;
+  padding: 4px;
   background: #f00;
   color: var(--white);
   border-radius: 4px;
@@ -378,7 +382,7 @@ body{
   font-weight: 500;
 }
 .status.inProgress {
-  padding: 2px 4px;
+  padding: 4px;
   background: #1795ce;
   color: var(--white);
   border-radius: 4px;
@@ -423,14 +427,18 @@ body{
 }
 .recentCustomers table tr td h4 span {
   font-size: 14px;
+  font-weight: 400;
+  padding: 15px ;
   color: var(--black2);
 }
 .recentCustomers table tr:hover {
   background: var(--blue);
   color: var(--white);
+
 }
 .recentCustomers table tr:hover td h4 span {
   color: var(--white);
+
 }
 
 
@@ -478,6 +486,26 @@ body{
 
  
 /* ====================== Responsive Design ========================== */
+
+@media (max-width: 1150px) {
+  .navigation {
+    right: -300px;
+  }
+  .navigation.active {
+    width: 300px;
+    right: 0;
+  }
+  .main {
+    width: 100%;
+    right: 0;
+  }
+  .main.active {
+    right: 300px;
+  }
+  .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 991px) {
   .navigation {
     right: -300px;
@@ -510,6 +538,28 @@ body{
   }
 }
 
+@media (max-width: 535px) {
+  .navigation {
+    right: -300px;
+  }
+  .main {
+    width: 100%;
+    right: 0;
+  }
+    .main {
+    width: 100%;
+    right: 0;
+  }
+  .main.active {
+    right: 300px;
+  }
+  .navigation {
+    width: 100%;
+    right: -100%;
+    z-index: 1000;
+  }
+  
+}
 @media (max-width: 480px) {
   .cardBox {
     grid-template-columns: repeat(1, 1fr);
