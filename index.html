@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="Logo-laravel"></ion-icon>
+                        </span>
+                        <span class="title">لوحة التحكم</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">الرئيسية</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">المستخدمين</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">الرسائل</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="basket"></ion-icon>
+                        </span>
+                        <span class="title">الطلبات</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">الاعدادات</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                         </span>
+                        <span class="title">الملف الشخصي</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">تسجيل الخروج</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="ابحث هنا ...">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/amjed.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,504</div>
+                        <div class="cardName">المشاهدات</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">المبيعات</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">284</div>
+                        <div class="cardName">التعليقات</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">$7,842</div>
+                        <div class="cardName">صافي الربح</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>الطلبات الأخيرة</h2>
+                        <a href="#" class="btn"> عرض الكل</a>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>الاسم</td>
+                                <td>السعر</td>
+                                <td>الدفع</td>
+                                <td>الحالة</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>ثلاجة ستار</td>
+                                <td>$1200</td>
+                                <td>مدفوع</td>
+                                <td><span class="status delivered">تم التوصيل</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>لابتوب ديل </td>
+                                <td>$110</td>
+                                <td>مستحق</td>
+                                <td><span class="status pending">مستحق</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>ساعة أبل</td>
+                                <td>$1200</td>
+                                <td>مدفوع</td>
+                                <td><span class="status return">مرتجع</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>أحذية أديداس</td>
+                                <td>$620</td>
+                                <td>مستحق</td>
+                                <td><span class="status inProgress">قيد التنفيذ</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>ثلاجة ستار  </td>
+                                <td>$1200</td>
+                                <td>مدفوع</td>
+                                <td><span class="status delivered">تم التوصيل</span></td>
+                            </tr>
+                            <tr>
+                                <td>لابتوب ديل</td>
+                                <td>$110</td>
+                                <td>مستحق</td>
+                                <td><span class="status pending">مستحق</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>ساعة أبل</td>
+                                <td>$1200</td>
+                                <td>مدفوع</td>
+                                <td><span class="status return">مرتجع</span></td>
+                            </tr>
+                            <tr>
+                                <td>أحذية أديداس</td>
+                                <td>$620</td>
+                                <td>مستحق</td>
+                                <td><span class="status inProgress">قيد التنفيذ</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- ================= New Customers ================ -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>العملاء الجدد</h2>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>امجد <br> <span>صنعاء</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer01.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>محمد <br> <span>صنعاء</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>علي <br> <span>الحصبة</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer01.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>روان <br> <span>صنعاء</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>عبد الرحمن <br> <span>الحصبة</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer01.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>امجد <br> <span>صنعاء</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer01.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>امجد <br> <span>صنعاء</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/customer02.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>امجد <br> <span>صنعاء</span></h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
